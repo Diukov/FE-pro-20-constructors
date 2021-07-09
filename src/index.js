@@ -86,6 +86,6 @@ function Student(name, surname, bdayYear) {
   };
 }
 
-let vasya = new Student("Vasya", "Petrov", 1993);
+const student = new Student("Vasya", "Petrov", 1994);
 
-console.log(vasya);
+student.present();
