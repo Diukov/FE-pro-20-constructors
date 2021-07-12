@@ -14,7 +14,7 @@ function Student(name, surname, bdayYear) {
 
     this.age = function () {
         const currentYear = new Date().getFullYear();
-        const studentsAge = currentYear - Number(this['Year of birth']);
+        const studentsAge = currentYear - this['Year of birth'];
 
         return studentsAge;
     };
