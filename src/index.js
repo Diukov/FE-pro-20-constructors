@@ -84,8 +84,10 @@ function Student(name, surname, bdayYear) {
 
         if (result.average > passingScoreMarks && result.attendence > passingScoreAttedence) {
             return 'Ути какой молодчинка!';
-        } else if ((result.average < passingScoreMarks && result.attendence > passingScoreAttedence) ||
-            (result.average > passingScoreMarks && result.attendence < passingScoreAttedence)) {
+        } else if (
+            (result.average < passingScoreMarks && result.attendence > passingScoreAttedence) ||
+            (result.average > passingScoreMarks && result.attendence < passingScoreAttedence)
+        ) {
             return 'Норм, но можно лучше.';
         } else return 'Редиска!';
     };
